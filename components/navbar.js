@@ -1,4 +1,5 @@
 import Logo from './logo'
+import ThemeToggle from './theme-toggle'
 import NextLink from 'next/link'
 import {
 	Container,
@@ -89,6 +90,7 @@ const Navbar = props => {
 				</Stack>
 
 				<Box flex={1} align='right'>
+					<ThemeToggle />
 					<Box 
 						ml={2}
 						display={{base: 'inline-block', md: 'none'}}
