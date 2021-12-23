@@ -22,7 +22,7 @@ import {
 } from '../components/bio'
 import { IoLogoGithub, IoLogoInstagram, IoLogoLinkedin } from 'react-icons/io5'
 
-const skills = ['Project Development','Strategy','Teamwork & Leadership', 'Empathy', 'Intermediate English', 'Linux', 'Initiative', 'Mobile Development', 'Teaching Skills', 'Agile Methodologies']
+const skills = ['Project Development', 'React', 'Javascript','Strategy','Teamwork & Leadership', 'Empathy', 'Intermediate English', 'Linux', 'Initiative', 'Mobile Development', 'Teaching Skills', 'Agile Methodologies']
 const webLinks = [
 	{
 		href: 'https://github.com/ssuarezs',
