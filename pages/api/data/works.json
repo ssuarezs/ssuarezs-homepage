@@ -2,13 +2,16 @@
   "quanticon": {
    "title": "Quanticon Valley",
    "date": "2021 - present",
-   "paragraph": "Explain Quanticon Valley",
-   "website": "https://tpi-desarrollo.github.io/nextghp/",
+   "paragraph": "Quanticon Valley is a project affiliated to the National University of Colombia and the gamification project. This project aims to gamify the TPI  subject (Interdisciplinary Projects Workshop), offered to engineering students, to turn it into an interactive game that supports students in the development of their own projects. In this project, Santiago is one of the main developers, mainly in charge of the frontend part of Quanticon Valley website.",
+   "website": "https://ingenieria.unal.edu.co/tpi/index.php/qv",
    "plataform": "website",
    "stack": "Javascript, React, NodeJS",
    "alt": "quanticonValley",
    "images": [
-   "/images/quanticon.png"
+     "/images/works/quanticon.png",
+     "/images/works/quanticon/1.png",
+     "/images/works/quanticon/2.png",
+     "/images/works/quanticon/3.png"
    ]
   }
 }

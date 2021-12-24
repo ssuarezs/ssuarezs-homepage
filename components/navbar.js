@@ -54,8 +54,8 @@ const Navbar = props => {
 				align='center'
 				justify='space-between'
 			>
-				<Flex align="center" mr={5}>
-          <Heading as="h1" size="lg" letterSpacing={'tighter'}>
+				<Flex align='center' mr={5}>
+          <Heading as='h1' size='lg' letterSpacing={'tighter'}>
 						<Logo/>
           </Heading>
         </Flex>
@@ -75,16 +75,16 @@ const Navbar = props => {
 						Hobbies
 					</LinkItem>
 					<LinkItem 
-						_target="_blank"
-            href="https://github.com/ssuarezs/ssuarezs-homepage"
+						_target='_blank'
+            href='https://github.com/ssuarezs?tab=repositories'
             path={path}
-            display="inline-flex"
-            alignItems="center"
+            display='inline-flex'
+            alignItems='center'
             style={{ gap: 4 }}
             pl={2}
 					>
 						<IoLogoGithub/>
-						Source
+						Github
 					</LinkItem>
 				</Stack>
 
@@ -113,11 +113,11 @@ const Navbar = props => {
 							</NextLink>
 							<MenuItem 
 								as={Link} 
-								href='https://github.com/ssuarezs/ssuarezs-homepage'
+								href='https://github.com/ssuarezs?tab=repositories'
             style={{ gap: 8 }}
 							>
 								<IoLogoGithub/>
-								<Text>Source</Text>
+								<Text>Github</Text>
 							</MenuItem>
 						</MenuList>
 					</Menu>

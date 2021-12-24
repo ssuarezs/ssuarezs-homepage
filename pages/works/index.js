@@ -6,11 +6,8 @@ import {
 } from '@chakra-ui/react'
 import Layout from '../../components/layouts/article'
 import Section from '../../components/section'
-import { WorkGridItem } from '../../components/grid-item'
+import { GridItem } from '../../components/grid-item'
 
-import thumbQV from '../../public/images/quanticon.png'
-import thumbRDA from '../../public/images/rda.png'
-import thumbHH from '../../public/images/healtyhome.png'
 
 const PageWorks = () => {
 	return (
@@ -22,13 +19,14 @@ const PageWorks = () => {
 
 				<SimpleGrid columns={[1,2,2]} gap={6}>
 					<Section delay={0.2}>
-						<WorkGridItem
+						<GridItem
 							id='quanticon'
+							section='works'
 							title='Quanticon Valley'
-							thumbnail={thumbQV}	
+							thumbnail='/images/works/quanticon.png'	
 						>
 							Interactive application for students, supporting project development. 
-						</WorkGridItem>
+						</GridItem>
 					</Section>
 				</SimpleGrid>
 
@@ -41,22 +39,24 @@ const PageWorks = () => {
 
 				<SimpleGrid columns={[1,2,2]} gap={6}>
 					<Section delay={0.6}>
-						<WorkGridItem
-							id='rda'
+						<GridItem
+							//id='rda'
+							section='works'
 							title='Radar DA'
-							thumbnail={thumbRDA}	
+							thumbnail='/images/works/rda.png'	
 						>
 							Mobile App to locate Ambiental Determinants in Ramiquiri, Colombia.
-						</WorkGridItem>
+						</GridItem>
 					</Section>
 					<Section delay={0.6}>
-						<WorkGridItem
-							id='healtyhome'
+						<GridItem
+							//id='healtyhome'
+							section='works'
 							title='Healty Home'
-							thumbnail={thumbHH}	
+							thumbnail='/images/works/healtyhome.png'	
 						>
 							Mobile App and IoT system to monitorate the health state of a person
-						</WorkGridItem>
+						</GridItem>
 					</Section>
 				</SimpleGrid>
 			</Container>

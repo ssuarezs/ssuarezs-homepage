@@ -5,9 +5,11 @@ import {
   List,
   ListItem,
   Center,
+  Divider,
   Image
 } from '@chakra-ui/react'
 import Layout from '../../components/layouts/article'
+import Section from '../../components/section'
 import { Title, WorkImage, Meta } from '../../components/work'
 import P from '../../components/paragraph'
 import NotFound from '../404'
@@ -25,44 +27,51 @@ const Work = ({data}) => {
           <Title>{data.title} <Badge>{data.date}</Badge></Title>
         )}
 
-        {data?.icon && (
-          <Center my={6}>
-            <Image
-              src={data.icon}
-              alt='icon'
-              w
-            />
-          </Center>
-        )}
-
-        <P>
-          {data?.paragraph}
-        </P>
-
-        <List>
-          {data?.website && (
-            <ListItem>
-              <Meta>Website</Meta>
-              <Link href={data.website}>{data.website}</Link>
-            </ListItem>
+				<Section delay={0.2}>
+          {data?.icon && (
+            <Center my={6}>
+              <Image
+                src={data.icon}
+                alt='icon'
+                w
+              />
+            </Center>
           )}
-          {data?.plataform && (
-            <ListItem>
-              <Meta>Plataform</Meta>
-              <span>{data.plataform}</span>
-            </ListItem>
-          )}
-          {data?.stack && (
-            <ListItem>
-              <Meta>Stack</Meta>
-              <span>{data.stack}</span>
-            </ListItem>
-          )}
-        </List>
 
-        {data?.images.map(src => 
-          <WorkImage key={src} src={src} alt={data.alt}/>
-        )}
+          <P>
+            {data?.paragraph}
+          </P>
+        </Section>
+
+				<Section delay={0.4}>
+					<Divider my={3}/>
+          <List>
+            {data?.website && (
+              <ListItem>
+                <Meta>Website</Meta>
+                <Link href={data.website}>{data.website}</Link>
+              </ListItem>
+            )}
+            {data?.plataform && (
+              <ListItem>
+                <Meta>Plataform</Meta>
+                <span>{data.plataform}</span>
+              </ListItem>
+            )}
+            {data?.stack && (
+              <ListItem>
+                <Meta>Stack</Meta>
+                <span>{data.stack}</span>
+              </ListItem>
+            )}
+          </List>
+				</Section>
+
+				<Section delay={0.6}>
+          {data?.images.map(src => 
+            <WorkImage key={src} src={src} alt={data.alt}/>
+          )}
+        </Section>
       </Container>
 		</Layout>
 	)
