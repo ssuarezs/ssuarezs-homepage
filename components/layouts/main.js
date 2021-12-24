@@ -2,7 +2,6 @@ import Head from 'next/head'
 import { 
 	Box,
 	Text,
-	Center,
 	Container
 } from '@chakra-ui/react'
 import Navbar from '../navbar'
@@ -10,7 +9,7 @@ import Navbar from '../navbar'
 const Main = ({ children, router }) => {
 	const path = router.asPath
 	return (
-		<Box as='main' pb={3}>
+		<Box as='main' pb={12} minH='100vh' position='relative'>
 			<Head>
 				<meta 
 					name='viewport'
@@ -24,12 +23,15 @@ const Main = ({ children, router }) => {
 			<Container maxW="container.md" pt='80px'>
 				{children}
 			</Container>
-			<Center
-				mt={5}
+			<Box
 				fontSize={14}
+				bottom={4}
+				position='absolute'
+				textAlign='center'
+				w='100%'
 			>
 				<Text>{new Date().getFullYear()} - Santiago Suarez</Text>
-			</Center>
+			</Box>
 		</Box>
 	)
 }
