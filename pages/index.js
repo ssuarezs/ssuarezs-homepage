@@ -12,6 +12,7 @@ import {
 	useColorModeValue
 } from '@chakra-ui/react'
 import { ChevronRightIcon } from '@chakra-ui/icons'
+import Layout from '../components/layouts/article'
 import Section from '../components/section'
 import Paragraph from '../components/paragraph'
 import { 
@@ -23,6 +24,7 @@ import {
 import { IoLogoGithub, IoLogoInstagram, IoLogoLinkedin } from 'react-icons/io5'
 
 const skills = ['Project Development', 'React', 'Javascript','Strategy','Teamwork & Leadership', 'Empathy', 'Intermediate English', 'Linux', 'Initiative', 'Mobile Development', 'Teaching Skills', 'Agile Methodologies']
+
 const webLinks = [
 	{
 		href: 'https://github.com/ssuarezs',
@@ -43,130 +45,132 @@ const webLinks = [
 
 const Page = () => {
 	return (
-		<Container>
-			<Box 
-				bg={useColorModeValue('whiteAlpha.500','whiteAlpha.200')} 
-				fontWeight='bold' 
-				borderRadius='lg' 
-				p={3} mb={6} 
-				align='center'
-			>
-				Electronics Engineer and Web Developer
-			</Box>
-			<Box display={{ md: 'flex' }}>
-				<Box flexGrow={1}>
-					<Heading as='h2' variant='page-title'>
-					Santiago Suarez
+		<Layout>
+			<Container>
+				<Box 
+					bg={useColorModeValue('whiteAlpha.500','whiteAlpha.200')} 
+					fontWeight='bold' 
+					borderRadius='lg' 
+					p={3} mb={6} 
+					align='center'
+				>
+					Electronics Engineer and Web Developer
+				</Box>
+				<Box display={{ md: 'flex' }}>
+					<Box flexGrow={1}>
+						<Heading as='h2' variant='page-title'>
+						Santiago Suarez
+						</Heading>
+						<p>
+							Learning is the essence of life
+						</p>
+					</Box>
+					<Box
+						flexShrink={0}
+						mt={{base: 4, md: 0}}
+						ml={{ md: 6 }}
+						textAlign='center'
+					>
+						<Image
+							borderColor='whiteAlpha.800'
+							borderWidth={2}
+							borderStyle='solid'
+							maxWidth='100px'
+							display='inline-block'
+							borderRadius='full'
+							objectFit='cover'
+							src='images/santiago.png'
+							alt='profile image'
+						/>
+					</Box>
+				</Box>
+
+				<Section delay={0.1}>
+					<Heading as='h3' variant='section-title'>
 					</Heading>
 					<Paragraph>
-						Learning is the essence of life
+						Developer, Chess player and 10th semester student of Electronic Engineering at the National University of Colombia. Self-taught with visualization, discipline, teamwork and leadership skills, knowledge in: 
+						Agile methodologies, 
+						Implementation of electronic systems, 
+						IOT oriented digital systems 
+						and software frontend development 
+						based on Javascript and React.
 					</Paragraph>
-				</Box>
-				<Box
-					flexShrink={0}
-					mt={{base: 4, md: 0}}
-					ml={{ md: 6 }}
-					textAlign='center'
-				>
-					<Image
-						borderColor='whiteAlpha.800'
-						borderWidth={2}
-						borderStyle='solid'
-						maxWidth='100px'
-						display='inline-block'
-						borderRadius='full'
-						objectFit='cover'
-						src='images/santiago.png'
-						alt='profile image'
-					/>
-				</Box>
-			</Box>
+					<Box align='center' my={4}>
+						<NextLink href='/works'>
+							<Button rightIcon={<ChevronRightIcon/>} colorScheme='orange'>
+								My portfolio
+							</Button>
+						</NextLink>
+					</Box>
+				</Section>
 
-			<Section delay={0.1}>
-				<Heading as='h3' variant='section-title'>
-				</Heading>
-				<Paragraph>
-					Developer, Chess player and 10th semester student of Electronic Engineering at the National University of Colombia. Self-taught with visualization, discipline, teamwork and leadership skills, knowledge in: 
-					Agile methodologies, 
-					Implementation of electronic systems, 
-					IOT oriented digital systems 
-					and software frontend development 
-					based on Javascript and React.
-				</Paragraph>
-				<Box align='center' my={4}>
-					<NextLink href='/works'>
-						<Button rightIcon={<ChevronRightIcon/>} colorSchem='teal'>
-							My portfolio
-						</Button>
-					</NextLink>
-				</Box>
-			</Section>
+				<Section delay={0.2}>
+					<Heading as='h3' variant='section-title'>
+						Bio
+					</Heading>
+					<BioSection>
+						<BioYear>2000</BioYear>
+						Born in Bogota, Colombia
+					</BioSection>
+					<BioSection>
+						<BioYear>2016</BioYear> 
+						Complete High School Studies in GIMFA (Air Force Military Gym) - Melgar, Tolima
+					</BioSection>
+					<BioSection>
+						<BioYear>2017 to present</BioYear> 
+						Studing electronic engineering at National University of Colombia
+					</BioSection>
+					<BioSection>
+						<BioYear>2021 to present</BioYear> 
+						Working as a freelancer Frontend Developer 
+					</BioSection>
+				</Section>
 
-			<Section delay={0.2}>
-				<Heading as='h3' variant='section-title'>
-					Bio
-				</Heading>
-				<BioSection>
-					<BioYear>2000</BioYear>
-					Born in Bogota, Colombia
-				</BioSection>
-				<BioSection>
-					<BioYear>2016</BioYear> 
-					Complete High School Studies in GIMFA (Air Force Military Gym) - Melgar, Tolima
-				</BioSection>
-				<BioSection>
-					<BioYear>2017 to present</BioYear> 
-					Studing electronic engineering at National University of Colombia
-				</BioSection>
-				<BioSection>
-					<BioYear>2021 to present</BioYear> 
-					Working as a freelancer Frontend Developer 
-				</BioSection>
-			</Section>
+				<Section delay={0.3}>
+					<Heading as='h3' variant='section-title'>
+						Skills
+					</Heading>
+					<BioSkillsBox>
+						{skills.map(s => 
+							<BioSkill key={s}>{s}</BioSkill>
+						)}
+					</BioSkillsBox>
+				</Section>
 
-			<Section delay={0.3}>
-				<Heading as='h3' variant='section-title'>
-					Skills
-				</Heading>
-				<BioSkillsBox>
-					{skills.map(s => 
-						<BioSkill key={s}>{s}</BioSkill>
-					)}
-				</BioSkillsBox>
-			</Section>
-
-			<Section delay={0.4}>
-				<Heading as='h3' variant='section-title'>
-					Contact
-				</Heading>
-				<List>
-					<ListItem display='flex'>
-						<BioYear>Email</BioYear> suarez.santiago.113@gmail.com
-					</ListItem>
-					<ListItem display='flex'>
-						<BioYear>Phone</BioYear> +57 3153787486
-					</ListItem>
-					<ListItem>
-						.
-					</ListItem>
-					{webLinks.map(item => {
-						return (
-						<ListItem key={item.user}>
-							<Link href={item.href} target="_blank">
-								<Button
-									variant="ghost"
-									colorScheme="teal"
-									leftIcon={<Icon as={item.icon} />}
-								>
-									{item.user}
-								</Button>
-							</Link>
+				<Section delay={0.4}>
+					<Heading as='h3' variant='section-title'>
+						Contact
+					</Heading>
+					<List>
+						<ListItem display='flex'>
+							<BioYear>Email</BioYear> suarez.santiago.113@gmail.com
 						</ListItem>
-						)
-					})}
-				</List>
-			</Section>
-		</Container>
+						<ListItem display='flex'>
+							<BioYear>Phone</BioYear> +57 3153787486
+						</ListItem>
+						<ListItem>
+							.
+						</ListItem>
+						{webLinks.map(item => {
+							return (
+							<ListItem key={item.user}>
+								<Link href={item.href} target="_blank">
+									<Button
+										variant="ghost"
+										colorScheme="teal"
+										leftIcon={<Icon as={item.icon} />}
+									>
+										{item.user}
+									</Button>
+								</Link>
+							</ListItem>
+							)
+						})}
+					</List>
+				</Section>
+			</Container>
+		</Layout>
 	)
 }
 export default Page

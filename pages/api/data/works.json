@@ -1,0 +1,14 @@
+{
+  "quanticon": {
+   "title": "Quanticon Valley",
+   "date": "2021 - present",
+   "paragraph": "Explain Quanticon Valley",
+   "website": "https://tpi-desarrollo.github.io/nextghp/",
+   "plataform": "website",
+   "stack": "Javascript, React, NodeJS",
+   "alt": "quanticonValley",
+   "images": [
+   "/images/quanticon.png"
+   ]
+  }
+}
