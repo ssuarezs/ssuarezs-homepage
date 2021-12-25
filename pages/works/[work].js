@@ -6,13 +6,16 @@ import {
   ListItem,
   Center,
   Divider,
-  Image
+  Image,
 } from '@chakra-ui/react'
+
+import NotFound from '../404'
 import Layout from '../../components/layouts/article'
 import Section from '../../components/section'
 import { Title, WorkImage, Meta } from '../../components/work'
 import P from '../../components/paragraph'
-import NotFound from '../404'
+
+import { IoLogoGithub } from 'react-icons/io5'
 
 import { getWork } from '../api/works'
 
@@ -64,6 +67,15 @@ const Work = ({data}) => {
                 <span>{data.stack}</span>
               </ListItem>
             )}
+            {data?.github && (
+              <ListItem 
+                display='flex' mt={4} gap={4}
+                alignItems='center' 
+              >
+                <IoLogoGithub fontSize={24}/>
+                <Link href={data.website}>{data.github}</Link>
+              </ListItem>
+            )}
           </List>
 				</Section>
 
@@ -90,6 +102,8 @@ export const getStaticProps = async ({ params }) => {
 export const getStaticPaths = async () => {
   const paths = [
     { params: { work: 'quanticon' } },
+    { params: { work: 'rda' } },
+    { params: { work: 'healtyhome' } }
   ]
   return {
     paths,

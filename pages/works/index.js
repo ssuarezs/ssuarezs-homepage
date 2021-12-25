@@ -2,7 +2,7 @@ import {
 	Heading,
 	Container,
 	SimpleGrid,
-	Divider
+	Divider,
 } from '@chakra-ui/react'
 import Layout from '../../components/layouts/article'
 import Section from '../../components/section'
@@ -40,17 +40,17 @@ const PageWorks = () => {
 				<SimpleGrid columns={[1,2,2]} gap={6}>
 					<Section delay={0.6}>
 						<GridItem
-							//id='rda'
+							id='rda'
 							section='works'
 							title='Radar DA'
 							thumbnail='/images/works/rda.png'	
 						>
-							Mobile App to locate Ambiental Determinants in Ramiquiri, Colombia.
+							Mobile App to locate Environmental Determinants in Ramiquiri, Colombia.
 						</GridItem>
 					</Section>
 					<Section delay={0.6}>
 						<GridItem
-							//id='healtyhome'
+							id='healtyhome'
 							section='works'
 							title='Healty Home'
 							thumbnail='/images/works/healtyhome.png'	

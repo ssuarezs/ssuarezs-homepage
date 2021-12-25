@@ -9,7 +9,7 @@ import Navbar from '../navbar'
 const Main = ({ children, router }) => {
 	const path = router.asPath
 	return (
-		<Box as='main' pb={12} minH='100vh' position='relative'>
+		<Box as='main' pb={14} minH='100vh' position='relative'>
 			<Head>
 				<meta 
 					name='viewport'

@@ -5,6 +5,7 @@ import {
 	Button,
 	Heading,
 	Container,
+	Badge,
 	List,
 	ListItem,
 	Link,
@@ -19,7 +20,6 @@ import {
 	BioSection, 
 	BioYear, 
 	BioSkillsBox,
-	BioSkill
 } from '../components/bio'
 import { IoLogoGithub, IoLogoInstagram, IoLogoLinkedin } from 'react-icons/io5'
 
@@ -44,6 +44,7 @@ const webLinks = [
 ]
 
 const Page = () => {
+	const colorScheme = useColorModeValue('blue','orange')
 	return (
 		<Layout>
 			<Container>
@@ -98,7 +99,7 @@ const Page = () => {
 					</Paragraph>
 					<Box align='center' my={4}>
 						<NextLink href='/works'>
-							<Button rightIcon={<ChevronRightIcon/>} colorScheme='orange'>
+							<Button rightIcon={<ChevronRightIcon/>} colorScheme={colorScheme}>
 								My portfolio
 							</Button>
 						</NextLink>
@@ -133,7 +134,10 @@ const Page = () => {
 					</Heading>
 					<BioSkillsBox>
 						{skills.map(s => 
-							<BioSkill key={s}>{s}</BioSkill>
+							<Badge 
+								key={s}	m={1}
+								colorScheme={colorScheme}
+							>{s}</Badge>
 						)}
 					</BioSkillsBox>
 				</Section>
@@ -158,7 +162,7 @@ const Page = () => {
 								<Link href={item.href} target="_blank">
 									<Button
 										variant="ghost"
-										colorScheme="teal"
+										colorScheme={colorScheme}
 										leftIcon={<Icon as={item.icon} />}
 									>
 										{item.user}

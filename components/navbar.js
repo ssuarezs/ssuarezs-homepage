@@ -22,12 +22,16 @@ import { IoLogoGithub } from 'react-icons/io5'
 const LinkItem = ({ href, path, _target, children, ...props }) => {
 	const active = path === href
 	const inactiveColor = useColorModeValue('gray200', 'whiteAlpha.900')
+	const activeColor = useColorModeValue('white', 'gray.800')
+	const bg = useColorModeValue('blue.400', 'orange.200')
 	return(
 		<NextLink href={href} passHref>
 			<Link
-				p={2}
-				bg={active ? 'grassTeal' : undefined}
-				color={active ? '#202023' : inactiveColor}
+				p={'4px 12px'}
+				borderRadius='lg'
+				bg={active ? bg : undefined}
+				fontWeight='bold'
+				color={active ? activeColor : inactiveColor}
 				_target={_target}
 				{...props}
 			>
@@ -101,7 +105,10 @@ const Navbar = props => {
 							variant='outline'
 							aria-label='Options'
 						/>
-						<MenuList>
+						<MenuList
+							bg={useColorModeValue('#ffffffc0','#202023c0')}
+							css={{backdropFilter: 'blur(10px)'}}
+						>
 							<NextLink href='/'>
 								<MenuItem>About</MenuItem>
 							</NextLink>

@@ -23,21 +23,21 @@ const PageHobbies = () => {
 							title='Chess'
 							thumbnail='/images/hobbies/chess.png'	
 						>
-							I was playing and training Chess for 5 years in different categories and improving my thinking process.
+							Santiago was playing and training Chess for 5 years in different categories and improving his thinking process.
 						</GridItem>
 						<GridItem
 							section='hobbies'
 							title='Linux'
 							thumbnail='/images/hobbies/linux.png'	
 						>
-							Learn about linux based operating systems and discover new distributions, how it works and much more. I simply fell in love with it.
+							Santiago learned about linux based operating systems and discovered new distributions, how it works and much more. He just fell in love with it
 						</GridItem>
 						<GridItem
 							section='hobbies'
 							title='Calisthenics'
 							thumbnail='/images/hobbies/calisthenics.png'	
 						>
-							I have been training my body for 3 years, looking to improve and be ready to give the best of me in all aspects of my life.
+							Santiago have been training his body for 3 years, looking to improve and be ready to give the best of him.
 						</GridItem>
 					</SimpleGrid>
 				</Section>

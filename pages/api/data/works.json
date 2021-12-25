@@ -13,5 +13,32 @@
      "/images/works/quanticon/2.png",
      "/images/works/quanticon/3.png"
    ]
+  },
+  "rda": {
+   "title": "RDA - Radar de Determinantes Ambientals",
+   "date": "2021",
+    "paragraph": "This was a project realized in conjuction with the National University of Colombia and the corporation of Corpochivor. The main problem faced was the lack of a method to inform the interested population of the different environmental determinants related to their territory, \n RDA is an android application proposed as a solution: 'Radar de Determinantes Ambientales'. The app makes it possible to consult information on the Environmental Determinants for the territory of interest, using the user's current location, by marking a point on a map of the coverage area or with the coordinates of that point. Santiago was the main and only developer in this project.",
+   "website": "https://tpifibog.wixsite.com/website-31",
+   "plataform": "Android",
+   "stack": "Javascript, React Native, NodeJS",
+   "github": "https://github.com/ssuarezs/TPI-25",
+   "alt": "rda",
+   "images": [
+     "/images/works/rda/1.png",
+     "/images/works/rda/2.png"
+   ]
+  },
+  "healtyhome": {
+   "title": "Healty Home",
+   "date": "2020",
+    "paragraph": "This was a project affiliated to the Embedded Systems course at the National University of Colombia. It is an IoT project that aims to monitor the health status of people, improving communication between doctors and patients. The IoT system consists of different sensors to monitor patients, an Android application as user interface for patients and a web page as user interface for doctors. Santiago was one of the Android developers in charge of the patient user interface.",
+   "plataform": "Android",
+   "stack": "Typescript, Ionic, Angular, NodeJS",
+   "github": "https://github.com/ssuarezs/healtyhome",
+   "alt": "healtyhome",
+   "images": [
+     "/images/works/healtyhome/1.png",
+     "/images/works/healtyhome/2.png"
+   ]
   }
 }

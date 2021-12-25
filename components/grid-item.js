@@ -11,7 +11,8 @@ export const GridItem = ({ children, id, section, title, thumbnail }) => (
           src={`${thumbnail}`}
           alt={title}
           w='100%'
-          borderRadius={20}
+          borderRadius={14}
+          boxShadow='lg'
         />
         <LinkOverlay href={`/works/${id}`}>
           <Text mt={2} fontSize={20}>
