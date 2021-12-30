@@ -1,8 +1,14 @@
 {
   "quanticon": {
+    "en": {
+       "date": "2021 - present",
+       "paragraph": "Quanticon Valley is a project affiliated to the National University of Colombia and the gamification project. This project aims to gamify the TPI  subject (Interdisciplinary Projects Workshop), offered to engineering students, to turn it into an interactive game that supports students in the development of their own projects. In this project, Santiago is one of the main developers, mainly in charge of the frontend part of Quanticon Valley website."
+    },
+    "es": {
+       "date": "2021 - presente",
+       "paragraph": "Quanticon Valley es un projecto afiliado a la Universidad Nacional de colombia y el proyecto de gamificacion. Este proyecto tiene como objetivo gamificar la materia de TPI (Taller de Proyectos interdiciplinarios), ofrecida a estudiantes de ingenieria, convirtiendola en un juego interactivo que apoya a los estudiantes en el desarrollo de sus propios proyectos. En este proyecto, Santiago es uno de los desarrolladores principales, principalmente a cargo del desarrollo frontend de la pagina de Quanticon Valley"
+    },
    "title": "Quanticon Valley",
-   "date": "2021 - present",
-   "paragraph": "Quanticon Valley is a project affiliated to the National University of Colombia and the gamification project. This project aims to gamify the TPI  subject (Interdisciplinary Projects Workshop), offered to engineering students, to turn it into an interactive game that supports students in the development of their own projects. In this project, Santiago is one of the main developers, mainly in charge of the frontend part of Quanticon Valley website.",
    "website": "https://ingenieria.unal.edu.co/tpi/index.php/qv",
    "plataform": "website",
    "stack": "Javascript, React, NodeJS",
@@ -16,8 +22,14 @@
   },
   "rda": {
    "title": "RDA - Radar de Determinantes Ambientals",
-   "date": "2021",
-    "paragraph": "This was a project realized in conjuction with the National University of Colombia and the corporation of Corpochivor. The main problem faced was the lack of a method to inform the interested population of the different environmental determinants related to their territory, \n RDA is an android application proposed as a solution: 'Radar de Determinantes Ambientales'. The app makes it possible to consult information on the Environmental Determinants for the territory of interest, using the user's current location, by marking a point on a map of the coverage area or with the coordinates of that point. Santiago was the main and only developer in this project.",
+   "en": {
+     "date": "2021",
+     "paragraph": "This was a project realized in conjuction with the National University of Colombia and the corporation of Corpochivor. The main problem faced was the lack of a method to inform the interested population of the different environmental determinants related to their territory. \n RDA is an android application proposed as a solution: 'Radar de Determinantes Ambientales'. The app makes it possible to consult information on the Environmental Determinants for the territory of interest, using the user's current location, by marking a point on a map of the coverage area or with the coordinates of that point. Santiago was the main and only developer in this project."
+   },
+   "es": {
+     "date": "2021",
+     "paragraph": "Este fue un projecto realizado en conjunto con la Universidad Nacional de Colombia y la coorporacion de Corpochivor. El principal problema enfrentado fue la falta de metodos para informar a la poblacion sobre los diferentes determinantes ambientales relacionados a su territorio. RDA es una aplicacion para dispositivos Android propuesta como solucion: Radar de Determinantes Ambientales. La aplicacion hace posible consultar la informacion de los determinantes ambientales para el territorio de interes, usando la ubicacion del usuario, marcando un punto en un mapa de la region cuvierta o ingresando las coordenadas del punto. Santiago fue el principal y unico desarrollador en este proyecto."
+   },
    "website": "https://tpifibog.wixsite.com/website-31",
    "plataform": "Android",
    "stack": "Javascript, React Native, NodeJS",
@@ -30,8 +42,14 @@
   },
   "healtyhome": {
    "title": "Healty Home",
-   "date": "2020",
-    "paragraph": "This was a project affiliated to the Embedded Systems course at the National University of Colombia. It is an IoT project that aims to monitor the health status of people, improving communication between doctors and patients. The IoT system consists of different sensors to monitor patients, an Android application as user interface for patients and a web page as user interface for doctors. Santiago was one of the Android developers in charge of the patient user interface.",
+   "en": {
+     "date": "2020",
+     "paragraph": "This was a project affiliated to the Embedded Systems course at the National University of Colombia. It is an IoT project that aims to monitor the health status of people, improving communication between doctors and patients. The IoT system consists of different sensors to monitor patients, an Android application as user interface for patients and a web page as user interface for doctors. Santiago was one of the Android developers in charge of the patient user interface."
+   },
+   "es": {
+     "date": "2020",
+     "paragraph": "Este fue un projecto afiliado a al curso de Sistemas Embebidos en la Universidad Nacional de Colombia. Este es un proyecto de IoT que apunta a monitorear el estado de salud de las personas, mejorando la comunicacion entre doctores y pacientes. El sitema IoT consiste en diferentes sensores para monitorear pacientes, una aplicacion para dispositivos Android como interfaz de usuario para los pacientes y una pagina web como interfaz de usuario para los doctores. Santiago fue uno de los desarrolladores encargado de la interfaz de usuario para los pacientes (Android)."
+   },
    "plataform": "Android",
    "stack": "Typescript, Ionic, Angular, NodeJS",
    "github": "https://github.com/ssuarezs/healtyhome",

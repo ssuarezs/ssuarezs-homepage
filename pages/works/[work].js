@@ -17,24 +17,36 @@ import P from '../../components/paragraph'
 
 import { IoLogoGithub } from 'react-icons/io5'
 
-import { getWork } from '../api/works'
+import { useReadMainState } from '../../lib/stateHooks'
+import { getWork } from '../api'
 
 const Work = ({data}) => {
+	const lang = useReadMainState()?.lang
+  const { 
+    title = 'title', 
+    icon = '', alt = '',
+    website = '', plataform = '',
+    stack = '', github = '', 
+    images = []
+  } = data
+  const { date = '', paragraph = '' } = data[lang] || {}
+
   if(!data){
     return <NotFound/>
   }
+
 	return (
 		<Layout>
       <Container>
-        {data?.title && data?.date && (
-          <Title>{data.title} <Badge>{data.date}</Badge></Title>
-        )}
+        <Title>
+          {title && date && <>{title} <Badge>{date}</Badge></>}
+        </Title>
 
 				<Section delay={0.2}>
-          {data?.icon && (
+          {icon && (
             <Center my={6}>
               <Image
-                src={data.icon}
+                src={icon}
                 alt='icon'
                 w
               />
@@ -42,46 +54,46 @@ const Work = ({data}) => {
           )}
 
           <P>
-            {data?.paragraph}
+            {paragraph}
           </P>
         </Section>
 
 				<Section delay={0.4}>
 					<Divider my={3}/>
           <List>
-            {data?.website && (
+            {website && (
               <ListItem>
                 <Meta>Website</Meta>
-                <Link href={data.website}>{data.website}</Link>
+                <Link href={website}>{website}</Link>
               </ListItem>
             )}
-            {data?.plataform && (
+            {plataform && (
               <ListItem>
-                <Meta>Plataform</Meta>
-                <span>{data.plataform}</span>
+                <Meta>Plataform{lang==='es'&&'a'}</Meta>
+                <span>{plataform}</span>
               </ListItem>
             )}
-            {data?.stack && (
+            {stack && (
               <ListItem>
                 <Meta>Stack</Meta>
-                <span>{data.stack}</span>
+                <span>{stack}</span>
               </ListItem>
             )}
-            {data?.github && (
+            {github && (
               <ListItem 
                 display='flex' mt={4} gap={4}
                 alignItems='center' 
               >
                 <IoLogoGithub fontSize={24}/>
-                <Link href={data.website}>{data.github}</Link>
+                <Link href={github}>{github}</Link>
               </ListItem>
             )}
           </List>
 				</Section>
 
 				<Section delay={0.6}>
-          {data?.images.map(src => 
-            <WorkImage key={src} src={src} alt={data.alt}/>
+          {images.map(src => 
+            <WorkImage key={src} src={src} alt={alt}/>
           )}
         </Section>
       </Container>

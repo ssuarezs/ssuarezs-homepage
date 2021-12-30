@@ -9,42 +9,28 @@ import {
 	List,
 	ListItem,
 	Link,
-	Icon,
 	useColorModeValue
 } from '@chakra-ui/react'
 import { ChevronRightIcon } from '@chakra-ui/icons'
 import Layout from '../components/layouts/article'
 import Section from '../components/section'
 import Paragraph from '../components/paragraph'
-import { 
-	BioSection, 
-	BioYear, 
-	BioSkillsBox,
-} from '../components/bio'
-import { IoLogoGithub, IoLogoInstagram, IoLogoLinkedin } from 'react-icons/io5'
+import { BioSection, BioYear, BioSkillsBox } from '../components/bio'
+import WebIcon from '../components/webIcon'
 
-const skills = ['Project Development', 'React', 'Javascript','Strategy','Teamwork & Leadership', 'Empathy', 'Intermediate English', 'Linux', 'Initiative', 'Mobile Development', 'Teaching Skills', 'Agile Methodologies']
 
-const webLinks = [
-	{
-		href: 'https://github.com/ssuarezs',
-		user: '@ssuarezs',
-		icon: IoLogoGithub
-	},
-	{
-		href: 'https://www.instagram.com/ssuarez.san/',
-		user: '@ssuarez.san',
-		icon: IoLogoInstagram
-	},
-	{
-		href: 'https://www.linkedin.com/in/santiago-su%C3%A1rez-423011171/',
-		user: 'Santiago Suarez',
-		icon: IoLogoLinkedin
-	}
-]
+import { useReadMainState } from '../lib/stateHooks'
+import { getData } from './api'
+
 
 const Page = () => {
 	const colorScheme = useColorModeValue('blue','orange')
+	const lang = useReadMainState()?.lang
+	const { 
+		title = 'title', name = 'name', slogan = 'slogan',
+		email = 'email', phone = 'phone', resume = 'resume', 
+		bioSection = [], skills = [], webLinks = []
+	} = getData(lang,'Bio')
 	return (
 		<Layout>
 			<Container>
@@ -55,15 +41,15 @@ const Page = () => {
 					p={3} mb={6} 
 					align='center'
 				>
-					Electronics Engineer and Web Developer
+					{title}
 				</Box>
 				<Box display={{ md: 'flex' }}>
 					<Box flexGrow={1}>
 						<Heading as='h2' variant='page-title'>
-						Santiago Suarez
+							{name}
 						</Heading>
 						<p>
-							Learning is the essence of life
+							{slogan}
 						</p>
 					</Box>
 					<Box
@@ -90,17 +76,12 @@ const Page = () => {
 					<Heading as='h3' variant='section-title'>
 					</Heading>
 					<Paragraph>
-						Developer, Chess player and 10th semester student of Electronic Engineering at the National University of Colombia. Self-taught with visualization, discipline, teamwork and leadership skills, knowledge in: 
-						Agile methodologies, 
-						Implementation of electronic systems, 
-						IOT oriented digital systems 
-						and software frontend development 
-						based on Javascript and React.
+						{resume}
 					</Paragraph>
 					<Box align='center' my={4}>
 						<NextLink href='/works'>
 							<Button rightIcon={<ChevronRightIcon/>} colorScheme={colorScheme}>
-								My portfolio
+								{lang === 'en' ? 'Portfolio' : 'Portafolio'}
 							</Button>
 						</NextLink>
 					</Box>
@@ -108,29 +89,19 @@ const Page = () => {
 
 				<Section delay={0.2}>
 					<Heading as='h3' variant='section-title'>
-						Bio
+						{lang === 'en' ? 'Bio' : 'Biografia'}
 					</Heading>
-					<BioSection>
-						<BioYear>2000</BioYear>
-						Born in Bogota, Colombia
-					</BioSection>
-					<BioSection>
-						<BioYear>2016</BioYear> 
-						Complete High School Studies in GIMFA (Air Force Military Gym) - Melgar, Tolima
-					</BioSection>
-					<BioSection>
-						<BioYear>2017 to present</BioYear> 
-						Studing electronic engineering at National University of Colombia
-					</BioSection>
-					<BioSection>
-						<BioYear>2021 to present</BioYear> 
-						Working as a freelancer Frontend Developer 
-					</BioSection>
+					{bioSection.map(item => 
+						<BioSection key={item[1]}>
+							<BioYear>{item[0]}</BioYear> 
+							{item[1]} 
+						</BioSection>
+					)}
 				</Section>
 
 				<Section delay={0.3}>
 					<Heading as='h3' variant='section-title'>
-						Skills
+						{lang === 'en' ? 'Skills' : 'Habilidades'}
 					</Heading>
 					<BioSkillsBox>
 						{skills.map(s => 
@@ -144,14 +115,14 @@ const Page = () => {
 
 				<Section delay={0.4}>
 					<Heading as='h3' variant='section-title'>
-						Contact
+						{lang === 'en' ? 'Contact' : 'Contacto'}
 					</Heading>
 					<List>
 						<ListItem display='flex'>
-							<BioYear>Email</BioYear> suarez.santiago.113@gmail.com
+							<BioYear>Email</BioYear>{email} 	
 						</ListItem>
 						<ListItem display='flex'>
-							<BioYear>Phone</BioYear> +57 3153787486
+							<BioYear>Phone</BioYear>{phone}
 						</ListItem>
 						<ListItem>
 							.
@@ -163,9 +134,10 @@ const Page = () => {
 									<Button
 										variant="ghost"
 										colorScheme={colorScheme}
-										leftIcon={<Icon as={item.icon} />}
+										leftIcon={<WebIcon icon={item.icon} />}
 									>
 										{item.user}
+										{item.icon}
 									</Button>
 								</Link>
 							</ListItem>

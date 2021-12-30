@@ -1,0 +1,124 @@
+{
+  "en": {
+    "Bio": {
+      "title": "Web Developer and Electronics Engineer",
+      "name": "Santiago Suarez",
+      "slogan": "Learning is the essence of life",
+      "email": "suarez.santiago.113@gmail.com",
+      "phone": "+57 3153787486",
+      "resume": "Developer, Chess player and 10th semester student of Electronic Engineering at the National University of Colombia. Self-taught with visualization, discipline, teamwork and leadership skills, knowledge in: Agile methodologies, Implementation of electronic systems, IOT oriented digital systems and software frontend development based on Javascript and React.",
+      "bioSection": [
+        ["2000","Born in Bogota, Colombia"],
+        ["2016","Complete High School Studies in GIMFA (Air Force Military Gym) - Melgar, Tolima"],
+        ["2017 to present","Studing electronic engineering at National University of Colombia"],
+        ["2021 to present","Working as a freelancer Frontend Developer"]
+      ],
+      "skills": ["Project Development", "React", "Javascript","Strategy","Teamwork & Leadership", "Empathy", "Intermediate English", "Linux", "Initiative", "Mobile Development", "Teaching Skills", "Agile Methodologies"],
+      "webLinks": [
+        {
+          "href": "https://github.com/ssuarezs",
+          "user": "@ssuarezs",
+          "icon": "github"
+        },
+        {
+          "href": "https://www.instagram.com/ssuarez.san/",
+          "user": "@ssuarez.san",
+          "icon": "instagram"
+        },
+        {
+          "href": "https://www.linkedin.com/in/santiago-su%C3%A1rez-423011171/",
+          "user": "Santiago Suarez",
+          "icon": "linkedin"
+        }
+      ]
+    },
+    "worksList": {
+      "works": [
+        { 
+          "id": "quanticon", "section": "works", 
+          "title": "Quanticon Valley" ,
+          "thumb": "/images/works/quanticon.png",
+          "desc": "Interactive application for students, supporting project development."
+        }
+      ],
+      "others": {
+        "name": "University Projects",
+        "works": [
+          { 
+            "id": "rda", "section": "works", 
+            "title": "RDA" ,
+            "thumb": "/images/works/rda.png",
+            "desc": "Mobile App to locate Environmental Determinants in Ramiquiri, Colombia."
+          },
+          { 
+            "id": "healtyhome", "section": "works", 
+            "title": "Healty Home" ,
+            "thumb": "/images/works/healtyhome.png",
+            "desc": "Mobile App and IoT system to monitorate the health state of a person."
+          }
+        ]
+      }
+    }
+  },
+  "es": {
+    "Bio": {
+      "title": "Desarrolador Web e Ingeniero Electronico",
+      "name": "Santiago Suarez",
+      "slogan": "El aprendizaje es la escencio de la vida",
+      "email": "suarez.santiago.113@gmail.com",
+      "phone": "+57 3153787486",
+      "resume": "Desarrollador, ajedrecista y estudiante de decimo semestre de Ingeniería Electronica en la Universidad Nacional de Colombia. Autodidacta con visualizacion, disciplina, habilidades de liderazgo y para trabajar en equipo. Conocimientos en: Metodologias agiles, implementacion de sistemas electronicos, sistemas digitales orientados a IoT y desarrollador de software basado principalmente en Javascript y React JS.",
+      "bioSection": [
+        ["2000","Nacio en Bogota, Colombia"],
+        ["2016","Completo sus estudios basicos en GIMFA (Gimnasio Militar de la Fuerza Aerea) - Melgar, Tolima"],
+        ["2017 al presente","Estudiando Ingeniería Electronica en la Universidad Nacional de Colombia"],
+        ["2021 al presente","Trabajando como desarrollador frontend frelancer"]
+      ],
+      "skills": ["Desarrollo de projectos", "React", "Javascript","Estrategia","Trabajo en equipo", "Liderazgo", "Empatia", "Ingles Intermedio", "Linux", "Iniciativa", "Desarrollo Mobil", "Enseñanza"],
+      "webLinks": [
+        {
+          "href": "https://github.com/ssuarezs",
+          "user": "@ssuarezs",
+          "icon": "github"
+        },
+        {
+          "href": "https://www.instagram.com/ssuarez.san/",
+          "user": "@ssuarez.san",
+          "icon": "instagram"
+        },
+        {
+          "href": "https://www.linkedin.com/in/santiago-su%C3%A1rez-423011171/",
+          "user": "Santiago Suarez",
+          "icon": "linkedin"
+        }
+      ]
+    },
+    "worksList": {
+      "works": [
+        { 
+          "id": "quanticon", "section": "works", 
+          "title": "Quanticon Valley" ,
+          "thumb": "/images/works/quanticon.png",
+          "desc": "Aplicacion interactiva para estudiantes, apoyandolos en el desarrollo de projectos."
+        }
+      ],
+      "others": {
+        "name": "Proyectos Universitarios",
+        "works": [
+          { 
+            "id": "rda", "section": "works", 
+            "title": "RDA" ,
+            "thumb": "/images/works/rda.png",
+            "desc": "Aplicacion mobil para localizar los determinantes ambientales en Ramiquiri, Colombia."
+          },
+          { 
+            "id": "healtyhome", "section": "works", 
+            "title": "Healty Home" ,
+            "thumb": "/images/works/healtyhome.png",
+            "desc": "Aplicacion Movil y sistema IoT para monitoreas el estado de salud de una persona."
+          }
+        ]
+      }
+    }
+  }
+}

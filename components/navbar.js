@@ -1,5 +1,6 @@
 import Logo from './logo'
 import ThemeToggle from './theme-toggle'
+import LangToggle from './lang-toggle'
 import NextLink from 'next/link'
 import {
 	Container,
@@ -18,6 +19,8 @@ import {
 } from '@chakra-ui/react'
 import { HamburgerIcon } from '@chakra-ui/icons'
 import { IoLogoGithub } from 'react-icons/io5'
+
+import { useReadMainState } from '../lib/stateHooks'
 
 const LinkItem = ({ href, path, _target, children, ...props }) => {
 	const active = path === href
@@ -43,6 +46,7 @@ const LinkItem = ({ href, path, _target, children, ...props }) => {
 
 const Navbar = props => {
 	const {path} = props
+	const lang = useReadMainState()?.lang.substring(0,2)
 	return (
 		<Box
 			position='fixed'
@@ -73,7 +77,7 @@ const Navbar = props => {
 					mt={{base: 4, md: 0}}
 				>
 					<LinkItem href='/works' path={path}>
-						Works
+						{lang === 'en' ? 'Works' : 'Experiencia'}
 					</LinkItem>
 					<LinkItem href='/hobbies' path={path}>
 						Hobbies
@@ -92,7 +96,8 @@ const Navbar = props => {
 					</LinkItem>
 				</Stack>
 
-				<Box flex={1} align='right'>
+				<Box flex={1} align='right' display={{md: 'flex'}}>
+					<LangToggle/>
 					<ThemeToggle />
 					<Box 
 						ml={2}
@@ -106,14 +111,17 @@ const Navbar = props => {
 							aria-label='Options'
 						/>
 						<MenuList
-							bg={useColorModeValue('#ffffffc0','#202023c0')}
-							css={{backdropFilter: 'blur(10px)'}}
+							bg={useColorModeValue('#ffffffe0','#202023c0')}	
 						>
 							<NextLink href='/'>
-								<MenuItem>About</MenuItem>
+								<MenuItem>
+									{lang === 'en' ? 'About' : 'Acerca de'}
+								</MenuItem>
 							</NextLink>
 							<NextLink href='/works'>
-								<MenuItem>Works</MenuItem>
+								<MenuItem>
+									{lang === 'en' ? 'Works' : 'Experiencia'}
+								</MenuItem>
 							</NextLink>
 							<NextLink href='/hobbies'>
 								<MenuItem>Hobbies</MenuItem>

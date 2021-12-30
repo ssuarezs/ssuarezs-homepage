@@ -2,11 +2,14 @@ import NextLink from 'next/link'
 import { Heading, Box, Image, Link, Badge, useColorModeValue } from '@chakra-ui/react'
 import { ChevronRightIcon } from '@chakra-ui/icons' 
 
+import { useReadMainState } from '../lib/stateHooks'
+
 export const Title = ({ children }) => {
+	const lang = useReadMainState()?.lang
   return (
     <Box>
       <NextLink href='/works'>
-        <Link>Works</Link>
+        <Link>{lang==='en' ? 'Works' : 'Experiencia'}</Link>
       </NextLink>
       <span>
         {' '} <ChevronRightIcon/> {' '} 
