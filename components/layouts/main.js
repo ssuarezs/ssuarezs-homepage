@@ -23,6 +23,7 @@ const Main = ({ children, router }) => {
 			<Container maxW="container.md" pt='80px'>
 				{children}
 			</Container>
+
 			<Box
 				fontSize={14}
 				bottom={4}

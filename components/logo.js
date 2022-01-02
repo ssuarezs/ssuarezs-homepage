@@ -4,20 +4,15 @@ import { Text, useColorModeValue } from '@chakra-ui/react'
 import styled from '@emotion/styled'
 
 const LogoBox = styled.span`
-	fontWeight: bold;
-	font-size: 20px;
   display: inline-flex;
   align-items: center;
-  height: 35px;
   line-height: 20px;
   padding: 10px;
+  height: 35px;
 
-	img{
-		transition: 0.3s ease;
-	}
-
+	img{ transition: 0.3s ease; }
 	&:hover img {
-		transform: scale(1.08) rotate(360deg);
+		transform: scale(1.2) rotate(360deg);
 	}
 `
 
