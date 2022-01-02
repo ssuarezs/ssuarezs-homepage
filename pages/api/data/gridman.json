@@ -58,13 +58,36 @@
           }
         ]
       }
-    }
+    },
+    "hobbiesList": [
+      {
+        "id": "chess",
+        "title": "Chess",
+        "section": "hobbies",
+        "thumb": "/images/hobbies/chess.png",
+        "desc": "Santiago was playing and training Chess for 5 years in different categories and improving his thinking process."
+      },
+      {
+        "id": "linux",
+        "title": "Linux",
+        "section": "hobbies",
+        "thumb": "/images/hobbies/linux.png",
+        "desc": "Santiago have learned about linux based operating systems and have discovered new distributions, how it works and much more. He just fell in love with it"
+      },
+      {
+        "id": "calisthenics",
+        "title": "Calisthenics",
+        "section": "hobbies",
+        "thumb": "/images/hobbies/calisthenics.png",
+        "desc": "Santiago have been training his body for 3 years, looking to improve and be ready to give the best of him."
+      }
+    ]
   },
   "es": {
     "Bio": {
       "title": "Desarrolador Web e Ingeniero Electronico",
       "name": "Santiago Suarez",
-      "slogan": "El aprendizaje es la escencio de la vida",
+      "slogan": "El aprendizaje es la escencia de la vida",
       "email": "suarez.santiago.113@gmail.com",
       "phone": "+57 3153787486",
       "resume": "Desarrollador, ajedrecista y estudiante de decimo semestre de Ingeniería Electronica en la Universidad Nacional de Colombia. Autodidacta con visualizacion, disciplina, habilidades de liderazgo y para trabajar en equipo. Conocimientos en: Metodologias agiles, implementacion de sistemas electronicos, sistemas digitales orientados a IoT y desarrollador de software basado principalmente en Javascript y React JS.",
@@ -119,6 +142,29 @@
           }
         ]
       }
-    }
+    },
+    "hobbiesList": [
+      {
+        "id": "chess",
+        "title": "Ajedrez",
+        "section": "hobbies",
+        "thumb": "/images/hobbies/chess.png",
+        "desc": "Santiago was playing and training Chess for 5 years in different categories and improving his thinking process."
+      },
+      {
+        "id": "linux",
+        "title": "Linux",
+        "section": "hobbies",
+        "thumb": "/images/hobbies/linux.png",
+        "desc": "Santiago ha aprendido sobre sistemas operativos basados en linux y ha descubierto nuevas distrubuciones, como funcionan y mucho mas."
+      },
+      {
+        "id": "calisthenics",
+        "title": "Calistenia",
+        "section": "hobbies",
+        "thumb": "/images/hobbies/calisthenics.png",
+        "desc": "Santiago ha estado entrenando us cuerpo por 3 años, buscando mejorar y estar preparado para dar lo mejor de si en cada aspecto de us vida."
+      }
+    ]
   }
 }

@@ -32,7 +32,7 @@ const Page = () => {
 		bioSection = [], skills = [], webLinks = []
 	} = getData(lang,'Bio')
 	return (
-		<Layout>
+		<Layout key={`index-${lang}`}>
 			<Container>
 				<Box 
 					bg={useColorModeValue('whiteAlpha.500','whiteAlpha.200')} 

@@ -7,38 +7,32 @@ import Layout from '../../components/layouts/article'
 import Section from '../../components/section'
 import { GridItem } from '../../components/grid-item'
 
+import { useReadMainState } from '../../lib/stateHooks'
+import { getData } from '../api'
 
 const PageHobbies = () => {
+	const lang = useReadMainState()?.lang
+	const hobbies = getData(lang, 'hobbiesList')
 	return (
-		<Layout title='Works'>
+		<Layout title='Hobbies'  key={`hobbies-${lang}`}>
 			<Container>
 				<Heading as='h2' fontSize={20} mb={[4,8,8]}>
-					What I love to do ♥
+					{lang === 'en' ? 'What I love to do ♥' : 'Lo que me gusta hacer ♥'}
 				</Heading>
 
 				<Section delay={0.2}>
 					<SimpleGrid columns={[1,2,2]} gap={6}>
-						<GridItem
-							section='hobbies'
-							title='Chess'
-							thumbnail='/images/hobbies/chess.png'	
-						>
-							Santiago was playing and training Chess for 5 years in different categories and improving his thinking process.
-						</GridItem>
-						<GridItem
-							section='hobbies'
-							title='Linux'
-							thumbnail='/images/hobbies/linux.png'	
-						>
-							Santiago learned about linux based operating systems and discovered new distributions, how it works and much more. He just fell in love with it
-						</GridItem>
-						<GridItem
-							section='hobbies'
-							title='Calisthenics'
-							thumbnail='/images/hobbies/calisthenics.png'	
-						>
-							Santiago have been training his body for 3 years, looking to improve and be ready to give the best of him.
-						</GridItem>
+						{hobbies.map(item => 
+							<GridItem
+								key={item.id}
+								//id={item.id}
+								title={item.title}
+								section={item.section}
+								thumbnail={item.thumb}	
+							>
+								{item.desc}
+							</GridItem>
+						)}
 					</SimpleGrid>
 				</Section>
 			</Container>

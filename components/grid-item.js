@@ -5,7 +5,7 @@ import { Global } from '@emotion/react'
 
 export const GridItem = ({ children, id, section, title, thumbnail }) => (
   <Box w='100%' textAlign='center'>
-    <NextLink href={id ? `/${section}/${id}`: '#'}>
+    <NextLink href={`/${section}/${id || ''}`}>
       <LinkBox cursor='pointer'>
         <Image
           src={`${thumbnail}`}

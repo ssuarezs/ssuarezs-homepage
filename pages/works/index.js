@@ -15,7 +15,7 @@ const PageWorks = () => {
 	const lang = useReadMainState()?.lang
 	const { works = [], others = {} } = getData(lang,'worksList')
 	return (
-		<Layout title='Works'>
+		<Layout title='Works' key={`works-${lang}`}>
 			<Container>
 				<Heading as='h2' fontSize={20} mb={4}>
 					{lang === 'en' ? 'Works' : 'Experiencia'}

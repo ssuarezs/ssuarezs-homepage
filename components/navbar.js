@@ -50,7 +50,7 @@ const Navbar = props => {
 	return (
 		<Box
 			position='fixed'
-			as='nav' w='100%'
+			as='nav' w='100%' maxH={16}
 			bg={useColorModeValue('#ffffff40','#20202380')}
 			css={{backdropFilter: 'blur(10px)'}}
 			zIndex={1} {...props}
@@ -111,7 +111,7 @@ const Navbar = props => {
 							aria-label='Options'
 						/>
 						<MenuList
-							bg={useColorModeValue('#ffffffe0','#202023c0')}	
+							bg={useColorModeValue('#ffffffe0','#202023f0')}	
 						>
 							<NextLink href='/'>
 								<MenuItem>

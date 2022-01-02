@@ -36,7 +36,7 @@ const Work = ({data}) => {
   }
 
 	return (
-		<Layout>
+		<Layout key={`work-${title}-${lang}`}>
       <Container>
         <Title>
           {title && date && <>{title} <Badge>{date}</Badge></>}
