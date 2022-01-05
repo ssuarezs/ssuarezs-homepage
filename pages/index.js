@@ -66,7 +66,7 @@ const Page = () => {
 							display='inline-block'
 							borderRadius='full'
 							objectFit='cover'
-							src='images/santiago.png'
+							src='images/santiago.jpg'
 							alt='profile image'
 						/>
 					</Box>
