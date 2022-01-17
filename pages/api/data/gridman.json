@@ -11,7 +11,7 @@
         ["2000","Born in Bogota, Colombia"],
         ["2016","Complete High School Studies in GIMFA (Air Force Military Gym) - Melgar, Tolima"],
         ["2017 to present","Studing electronic engineering at National University of Colombia"],
-        ["2021 to present","Working as a freelancer Frontend Developer"]
+        ["2021 to present","Working as a Frontend Developer"]
       ],
       "skills": ["Project Development", "React", "Javascript","Strategy","Teamwork & Leadership", "Empathy", "Intermediate English", "Linux", "Initiative", "Mobile Development", "Teaching Skills", "Agile Methodologies"],
       "webLinks": [
@@ -65,21 +65,21 @@
         "title": "Chess",
         "section": "hobbies",
         "thumb": "/images/hobbies/chess.png",
-        "desc": "Santiago was playing and training Chess for 5 years in different categories and improving his thinking process."
+        "desc": "I was playing and training Chess for 5 years in different categories and improving my thinking process."
       },
       {
         "id": "linux",
         "title": "Linux",
         "section": "hobbies",
         "thumb": "/images/hobbies/linux.png",
-        "desc": "Santiago have learned about linux based operating systems and have discovered new distributions, how it works and much more. He just fell in love with it"
+        "desc": "I have learned about linux based operating systems and i have discovered new distributions, how it works and much more. I just fell in love with it."
       },
       {
         "id": "calisthenics",
         "title": "Calisthenics",
         "section": "hobbies",
         "thumb": "/images/hobbies/calisthenics.png",
-        "desc": "Santiago have been training his body for 3 years, looking to improve and be ready to give the best of him."
+        "desc": "I have been training my body for 3 years, looking to improve and be ready to give the best of me."
       }
     ]
   },
@@ -90,12 +90,12 @@
       "slogan": "El aprendizaje es la escencia de la vida",
       "email": "suarez.santiago.113@gmail.com",
       "phone": "+57 3153787486",
-      "resume": "Desarrollador, ajedrecista y estudiante de decimo semestre de Ingeniería Electronica en la Universidad Nacional de Colombia. Autodidacta con visualizacion, disciplina, habilidades de liderazgo y para trabajar en equipo. Conocimientos en: Metodologias agiles, implementacion de sistemas electronicos, sistemas digitales orientados a IoT y desarrollador de software basado principalmente en Javascript y React JS.",
+      "resume": "Desarrollador, ajedrecista y estudiante de décimo semestre de Ingeniería Electrónica en la Universidad Nacional de Colombia. Autodidacta con visualización, disciplina, habilidades de liderazgo y para trabajar en equipo. Conocimientos en: Metodologías ágiles, implementación de sistemas electrónicos, sistemas digitales orientados a IoT y desarrollador de software basado principalmente en Javascript y React JS.",
       "bioSection": [
-        ["2000","Nacio en Bogota, Colombia"],
-        ["2016","Completo sus estudios basicos en GIMFA (Gimnasio Militar de la Fuerza Aerea) - Melgar, Tolima"],
-        ["2017 al presente","Estudiando Ingeniería Electronica en la Universidad Nacional de Colombia"],
-        ["2021 al presente","Trabajando como desarrollador frontend frelancer"]
+        ["2000","Naci en Bogota, Colombia"],
+        ["2016","Complete mis estudios básicos en GIMFA (Gimnasio Militar de la Fuerza Aerea) - Melgar, Tolima"],
+        ["2017 al presente","Estudiando Ingeniería Electrónica en la Universidad Nacional de Colombia"],
+        ["2021 al presente","Trabajando como desarrollador frontend"]
       ],
       "skills": ["Desarrollo de projectos", "React", "Javascript","Estrategia","Trabajo en equipo", "Liderazgo", "Empatia", "Ingles Intermedio", "Linux", "Iniciativa", "Desarrollo Mobil", "Enseñanza"],
       "webLinks": [
@@ -122,7 +122,7 @@
           "id": "quanticon", "section": "works", 
           "title": "Quanticon Valley" ,
           "thumb": "/images/works/quanticon.png",
-          "desc": "Aplicacion interactiva para estudiantes, apoyandolos en el desarrollo de projectos."
+          "desc": "Aplicación interactiva para estudiantes, apoyándolos en el desarrollo de proyectos."
         }
       ],
       "others": {
@@ -132,13 +132,13 @@
             "id": "rda", "section": "works", 
             "title": "RDA" ,
             "thumb": "/images/works/rda.png",
-            "desc": "Aplicacion mobil para localizar los determinantes ambientales en Ramiquiri, Colombia."
+            "desc": "Aplicación móvil para localizar los determinantes ambientales en Ramiquiri, Colombia."
           },
           { 
             "id": "healtyhome", "section": "works", 
             "title": "Healty Home" ,
             "thumb": "/images/works/healtyhome.png",
-            "desc": "Aplicacion Movil y sistema IoT para monitoreas el estado de salud de una persona."
+            "desc": "Aplicación Móvil y sistema IoT para monitorear el estado de salud de una persona."
           }
         ]
       }
@@ -149,21 +149,21 @@
         "title": "Ajedrez",
         "section": "hobbies",
         "thumb": "/images/hobbies/chess.png",
-        "desc": "Santiago was playing and training Chess for 5 years in different categories and improving his thinking process."
+        "desc": "He jugado y entrenado Ajedrez durante los últimos 5 años en diferentes categorías, mejorando mi proceso de pensamiento."
       },
       {
         "id": "linux",
         "title": "Linux",
         "section": "hobbies",
         "thumb": "/images/hobbies/linux.png",
-        "desc": "Santiago ha aprendido sobre sistemas operativos basados en linux y ha descubierto nuevas distrubuciones, como funcionan y mucho mas."
+        "desc": "He aprendido sobre sistemas operativos basados en linux y he descubierto nuevas distribuciones, como funcionan y mucho más."
       },
       {
         "id": "calisthenics",
         "title": "Calistenia",
         "section": "hobbies",
         "thumb": "/images/hobbies/calisthenics.png",
-        "desc": "Santiago ha estado entrenando us cuerpo por 3 años, buscando mejorar y estar preparado para dar lo mejor de si en cada aspecto de us vida."
+        "desc": "He estado entrenando mi cuerpo por 3 años, buscando mejorar y estar preparado para dar lo mejor de mi en cada aspecto de mi vida."
       }
     ]
   }

@@ -137,7 +137,6 @@ const Page = () => {
 										leftIcon={<WebIcon icon={item.icon} />}
 									>
 										{item.user}
-										{item.icon}
 									</Button>
 								</Link>
 							</ListItem>

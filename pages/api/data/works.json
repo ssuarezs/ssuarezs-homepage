@@ -6,7 +6,7 @@
     },
     "es": {
        "date": "2021 - presente",
-       "paragraph": "Quanticon Valley es un projecto afiliado a la Universidad Nacional de colombia y el proyecto de gamificacion. Este proyecto tiene como objetivo gamificar la materia de TPI (Taller de Proyectos interdiciplinarios), ofrecida a estudiantes de ingenieria, convirtiendola en un juego interactivo que apoya a los estudiantes en el desarrollo de sus propios proyectos. En este proyecto, Santiago es uno de los desarrolladores principales, principalmente a cargo del desarrollo frontend de la pagina de Quanticon Valley"
+       "paragraph": "Quanticon Valley es un proyecto afiliado a la Universidad Nacional de Colombia y el proyecto de gamificación. Este proyecto tiene como objetivo gamificar la materia de TPI (Taller de Proyectos interdisciplinarios), ofrecida a estudiantes de ingeniería, convirtiéndola en un juego interactivo que apoya a los estudiantes en el desarrollo de sus propios proyectos. En este proyecto, Santiago es uno de los desarrolladores principales, principalmente a cargo del desarrollo frontend de la pagina de Quanticon Valley."
     },
    "title": "Quanticon Valley",
    "website": "https://ingenieria.unal.edu.co/tpi/index.php/qv",
@@ -28,7 +28,7 @@
    },
    "es": {
      "date": "2021",
-     "paragraph": "Este fue un projecto realizado en conjunto con la Universidad Nacional de Colombia y la coorporacion de Corpochivor. El principal problema enfrentado fue la falta de metodos para informar a la poblacion sobre los diferentes determinantes ambientales relacionados a su territorio. RDA es una aplicacion para dispositivos Android propuesta como solucion: Radar de Determinantes Ambientales. La aplicacion hace posible consultar la informacion de los determinantes ambientales para el territorio de interes, usando la ubicacion del usuario, marcando un punto en un mapa de la region cuvierta o ingresando las coordenadas del punto. Santiago fue el principal y unico desarrollador en este proyecto."
+     "paragraph": "Este fue un proyecto realizado en conjunto con la Universidad Nacional de Colombia y la corporación de Corpochivor. El principal problema enfrentado fue la falta de métodos para informar a la población sobre los diferentes determinantes ambientales relacionados a su territorio. RDA es una aplicación para dispositivos Android propuesta como solución: Radar de Determinantes Ambientales. La aplicación hace posible consultar la información de los determinantes ambientales para el territorio de interés, usando la ubicación del usuario, marcando un punto en un mapa de la región cubierta o ingresando las coordenadas del punto. Santiago fue el principal y único desarrollador en este proyecto."
    },
    "website": "https://tpifibog.wixsite.com/website-31",
    "plataform": "Android",
@@ -48,7 +48,7 @@
    },
    "es": {
      "date": "2020",
-     "paragraph": "Este fue un projecto afiliado a al curso de Sistemas Embebidos en la Universidad Nacional de Colombia. Este es un proyecto de IoT que apunta a monitorear el estado de salud de las personas, mejorando la comunicacion entre doctores y pacientes. El sitema IoT consiste en diferentes sensores para monitorear pacientes, una aplicacion para dispositivos Android como interfaz de usuario para los pacientes y una pagina web como interfaz de usuario para los doctores. Santiago fue uno de los desarrolladores encargado de la interfaz de usuario para los pacientes (Android)."
+     "paragraph": "Este fue un proyecto afiliado al curso de Sistemas Embebidos en la Universidad Nacional de Colombia. Este es un proyecto de IoT que apunta a monitorear el estado de salud de las personas, mejorando la comunicación entre doctores y pacientes. El sistema IoT consiste en diferentes sensores para monitorear pacientes, una aplicación para dispositivos Android como interfaz de usuario para los pacientes y una página web como interfaz de usuario para los doctores. Santiago fue uno de los desarrolladores encargados de la interfaz de usuario para los pacientes (Android)."
    },
    "plataform": "Android",
    "stack": "Typescript, Ionic, Angular, NodeJS",
