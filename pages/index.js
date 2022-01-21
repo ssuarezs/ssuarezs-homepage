@@ -142,6 +142,16 @@ const Page = () => {
 							</ListItem>
 							)
 						})}
+						<ListItem>
+							<Link href={`mailto:${email}`} target="_blank">
+								<Button
+									variant="ghost"
+									colorScheme={colorScheme}
+								>
+									{email}
+								</Button>
+							</Link>
+						</ListItem>
 					</List>
 				</Section>
 			</Container>
